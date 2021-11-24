@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "blog-do-matheuzinho",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

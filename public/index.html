@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/estilo.css" />
+  <title>Matheuzinho</title>
+</head>
+<body>
+  <div id="cabecalho">
+    <h1>Matheuzinho</h1>
+  </div>
+
+  <div id="boas-vindas">
+    <h2>Bem-vindo<span>(a)</span> ao meu site!</h2>
+
+    <p>Olá, visitante! Em breve, você poderá saber mais sobre o meu trabalho e minhas loucuras
+      aqui no meu site pessoal!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus orci lorem, lacinia in ipsum quis, blandit scelerisque odio. In suscipit, elit a lacinia pulvinar, nisi tortor congue tortor, sit amet posuere dui tortor non nulla. Duis nec ligula diam. Nulla ac nulla arcu. Etiam molestie posuere arcu vel tristique. Aenean magna lorem, sagittis hendrerit condimentum ac, venenatis non velit. Nunc eget mi turpis. Aenean molestie ipsum et tellus mollis imperdiet. Aliquam eu accumsan nunc.</p>
+  
+    <p>Sed auctor, enim at semper fringilla, mauris arcu molestie justo, quis eleifend risus sapien ut lectus. Donec vestibulum sapien sollicitudin turpis iaculis posuere. Vivamus mauris quam, mattis eget lacus vel, efficitur aliquet orci. Nullam augue arcu, porta rutrum finibus vitae, consectetur sit amet odio. Quisque consequat orci risus, ut vestibulum arcu venenatis ut. Vivamus imperdiet tempus vehicula. Pellentesque volutpat aliquam erat, vitae aliquet dolor elementum id.</p>
+  </div>
+
+  <div id="sobre-mim">
+    <h3>Quem sou eu</h3>
+
+    <figure>
+      <img src="./assets/img/matheuzinho.jpg" alt="Matheuzinho, em carne e osso" />
+      <figcaption>Discente do 1&ordm; período do Curso de Tecnologia em Sistemas para Internet,
+        cliente VIP da indústria cafeeira, musicista, rico não praticante e pecador cujo
+        coração arde de amor por Cristo.</figcaption>
+    </figure>
+  </div>
+
+  <div id="rodape">
+    <span>&copy; Matheuzinho</span>
+    <span>Para propostas, convites, dúvidas ou pedidos de socorro:</span>
+    
+    <ul id="icones">
+      <li>
+        <a href="https://github.com/mdccg" target="_blank">
+          <img src="./assets/icons/github.svg" alt="GitHub" />
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/rondoallaturca.mid" target="_blank">
+          <img src="./assets/icons/instagram.svg" alt="Instagram" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/matheus-comparotto-1a7895113/" target="_blank">
+          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/channel/UCLjwSwbhKF1Y4e7-fjTxFQQ" target="_blank">
+          <img src="./assets/icons/youtube.svg" alt="YouTube" />
+        </a>
+      </li>
+      <li>
+        <a href="https://youtu.be/fyOkPrNSy7c" target="_blank">
+          <img src="./assets/icons/twitter.svg" alt="Twitter"
+            title="Não tenho Twitter pelo medo de ser cancelado" />
+        </a>
+      </li>
+      <li>
+        <a href="mailto:comparotto.js@gmail.com" target="_blank">
+          <img src="./assets/icons/at.svg" alt="Gmail" />
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBG4jOG1OC_mKLiy0T1rLj9tQ_-SyAtxio",
+      authDomain: "cpw1-93d13.firebaseapp.com",
+      projectId: "cpw1-93d13",
+      storageBucket: "cpw1-93d13.appspot.com",
+      messagingSenderId: "297778390917",
+      appId: "1:297778390917:web:0d3b11e4c0ecdf2c8bc6ec",
+      measurementId: "G-YGMZYR3QQ5"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+</html>

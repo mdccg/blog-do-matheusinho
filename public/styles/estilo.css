@@ -1,0 +1,173 @@
+@import './fontes.css';
+
+:root {
+  /* https://draculatheme.com/contribute */
+  --background: #282a36;
+  --current-line: #44475a;
+  --foreground: #f8f8f2;
+  --comment: #6272a4;
+
+  /* https://flatuicolors.com/palette/us */
+  --city-lights: #dfe6e9;
+  --soothing-breeze: #b2bec3;
+  --dracula-orchid: #2d3436;
+}
+
+* {
+  margin: 0;
+}
+
+#cabecalho {
+  grid-area: cabecalho;
+  background-color: var(--current-line);
+  background-image: url(./../assets/img/circuit-board.svg);
+}
+
+#cabecalho h1 {
+  font-family: 'PT Sans Narrow';
+  color: white;
+  font-size: 500%;
+
+  text-shadow: 4px 4px 0 var(--background);
+
+  padding: 64px 24px 48px;
+}
+
+#boas-vindas {
+  grid-area: boas-vindas;
+  
+  padding: 24px;
+}
+
+#boas-vindas h2 {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 160%;
+
+  color: var(--background);
+
+  margin-bottom: 16px;
+}
+
+#boas-vindas h2 span {
+  color: var(--current-line);
+}
+
+#boas-vindas p {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-size: 100%;
+
+  color: var(--dracula-orchid);
+  line-height: 1.5;
+
+  margin-bottom: 16px;
+}
+
+#sobre-mim {
+  grid-area: sobre-mim;
+
+  padding: 24px 24px;
+
+  background-color: var(--city-lights);
+}
+
+#sobre-mim h3 {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 156%;
+  
+  color: var(--background);
+  text-align: center;
+}
+
+#sobre-mim figure img {
+  width:  226px;
+  height: 226px;
+
+  border: 8px solid var(--soothing-breeze);
+  border-radius: 384px;
+
+  display: block;
+  margin: 16px auto;
+}
+
+#sobre-mim figure figcaption {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-size: 80%;
+
+  color: var(--dracula-orchid);
+  text-align: center;
+  line-height: 1.5;
+}
+
+#rodape {
+  grid-area: rodape;
+
+  padding: 24px;
+
+  background-color: var(--background);
+}
+
+#rodape span {
+  display: block;
+
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-size: 90%;
+  
+  color: white;
+
+  margin-bottom: 8px;
+}
+
+#rodape #icones {
+  margin-top: 16px;
+}
+
+#rodape #icones li {
+  display: inline;
+
+  margin-right: 8px;
+}
+
+#rodape #icones img {
+  width:  32px;
+  height: 32px;
+
+  filter: invert(100%);
+}
+
+#rodape ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#rodape a {
+  text-decoration: none;
+}
+
+body {
+  grid-template-areas:
+    'cabecalho cabecalho cabecalho cabecalho'
+    'boas-vindas boas-vindas boas-vindas sobre-mim'
+    'rodape rodape rodape rodape';
+  
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    grid-template-areas:
+      'cabecalho'
+      'boas-vindas'
+      'sobre-mim'
+      'rodape';
+  }
+
+  #boas-vindas, #rodape {
+    text-align: center;
+  }
+}
